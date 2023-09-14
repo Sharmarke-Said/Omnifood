@@ -226,7 +226,7 @@
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
+@media (max-width: 35em) {
   .grid {
     row-gap: 4.8rem;
   }
