@@ -117,15 +117,13 @@ const obs = new IntersectionObserver(
   (entries) => {
     const ent = entries[0];
     console.log(ent);
-    if (!ent.isIntersecting) 
-      document.body.classList.add("sticky");
-    if (ent.isIntersecting) 
-      document.body.classList.remove("sticky");
+    if (!ent.isIntersecting) document.body.classList.add("sticky");
+    if (ent.isIntersecting) document.body.classList.remove("sticky");
   },
   {
     root: null,
     threshold: 0,
-    rootMargin: "-80px"
+    rootMargin: "-80px",
   }
 );
 obs.observe(sectionHeroEl);
